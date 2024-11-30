@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Mengatur latar belakang halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('gambar/p1.png'); /* Pastikan path file gambar benar */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container form login */
+        .login-container {
+            background: rgba(255, 255, 255, 0.5); /* Warna putih transparan */
+            width: 400px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+            text-align: center;
+        }
+
+        /* Judul login */
+        .login-container h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: #333;
+        }
+
+        .login-container h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #3d413e;
+            margin: 10px auto 0;
+        }
+
+        /* Input form */
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .login-container input:focus {
+            border-bottom: 2px solid #768079;
+        }
+
+        /* Link tambahan */
+        .login-container a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            color: #3d413e;
+            transition: 0.3s;
+        }
+
+        .login-container a:hover {
+            color: #768079;
+        }
+
+        /* Tombol login */
+        .login-container button {
+            background: linear-gradient(to right, #7ed957, #4caf50);
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 90%;
+            margin: 20px 0;
+        }
+
+        .login-container button:hover {
+            background: linear-gradient(to right, #6dc94e, #3ba344);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Teks bawah form */
+        .login-container p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#">Forgot password?</a>
+            <button type="submit">LOGIN</button>
+        </form>
+        <p>Don't have an account yet?</p>
+    </div>
+</body>
+</html>
